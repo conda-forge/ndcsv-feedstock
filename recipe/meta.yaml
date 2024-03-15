@@ -1,4 +1,4 @@
-{% set version = "1.1.0" %}
+{% set version = "1.2.0" %}
 
 package:
   name: ndcsv
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/n/ndcsv/ndcsv-{{ version }}.tar.gz
-  sha256: 4f4587d88b953a81398451980d843508ec50b135144c4436e5d9066da8428701
+  sha256: 54d67ae4161e0d7574e73c37ceb5a8c928fd688e5edfa53f219672719d89b05c
 
 build:
   noarch: python
@@ -17,13 +17,15 @@ requirements:
   build:
     - python >=3.8
     - pip
+    - setuptools >=66
     - setuptools_scm
   run:
     - python >=3.8
+    - packaging >=22
     - numpy >=1.14
     - pandas >=0.24
-    - xarray >=0.14
     - pshell >=1.0
+    - xarray >=0.14
 
 test:
   imports:
