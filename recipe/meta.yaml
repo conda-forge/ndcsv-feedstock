@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/n/ndcsv/ndcsv-{{ version }}.tar.gz
-  sha256: 9fca2326df40a8d420e8eea01764f658b5cdcb1f1b5902f7db8e5bc7
+  sha256: 6547a0d5b11c5addea20500173f1f4f3dc67882fe80c7e8829a5e6a0ba925a7f
 
 build:
   noarch: python
